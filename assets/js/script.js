@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload = function () {
 
     // Pick up on element from canvas by ID
     let area = document.getElementById('area');
@@ -44,44 +44,44 @@ window.onload = function() {
 
     function game() {
 
-        stx += spx
-        sty += spy
+        stx += spx;
+        sty += spy;
 
         // For snake control on the boards rps
         if (stx < 0) {
-            stx = qtp-1
+            stx = qtp-1;
         }
         if (stx > qtp-1) {
-            stx = 0
+            stx = 0;
         }
         if (sty < 0) {
-            sty = qtp-1
+            sty = qtp-1;
         }
         if (py > qtp-1) {
-            sty = 0
+            sty = 0;
         }
 
         // javascript contex.fillRect (x, y, = altura, largura)
-        contx.fillStyle = "#111D4A";
-        contx.fillRect(0,0, area.width, area.Height);
+        contx.fillStyle = "black";
+        contx.fillRect(0,0, area.width, area.height);
         
-        contx.fillStyle = "#EA2B1F"
-        contx.fillRect(mousex*psz, mousey*psz, psz,psz,2,2)
+        contx.fillStyle = "red"
+        contx.fillRect(mousex * psz, mousey * psz, psz, psz, 2, 2);
 
         // For ([inicialExpretion]; [condition]; [increment]) declaration
         for (let i = 0; i < tail.length; i++) {
-            contx.fillStyle = "#09BC8A"
-            contx.stokeStyle = "#004346"
-            contx.fillRect(tail[i].x*psz, tail[i].y*psz,psz,psz)
-            contx.strokeRect(tail[i].x*psz, tail[i].y*psz,psz,psz)
+            contx.fillStyle = "green"
+            contx.stokeStyle = "blue"
+            contx.fillRect(tail[i].x * psz, tail[i].y * psz, psz, psz);
+            contx.strokeRect(tail[i].x * psz, tail[i].y * psz, psz, psz);
             if (tail[i].x == stx && tail[i].y == sty) {
-                spx = spy = 0
-                tails = 2
-                poiti = 0
+                spx = spy = 0;
+                tails = 2;
+                poiti = 0;
             }
         }
 
-        tail.push({x:stx,y:sty})
+        tail.push({x: stx, y: sty})
 
         while (tail.length > tails) {
             tail.shift()
@@ -89,17 +89,17 @@ window.onload = function() {
 
         if (mousex==stx && mousey==sty){
             tails++
-            mousex = Math.floor(Math.random()*qtp)
-            mousey = Math.floor(Math.random()*qtp)
+            mousex = Math.floor(Math.random() * qtp)
+            mousey = Math.floor(Math.random() * qtp)
 
             poits.innerHTML = ++poiti
         }
 
     }
 
-    window.addEventListener("keydown", function(e) {
+    window.addEventListener("keydown", function (e) {
         // Space and arrow keys
-        if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+        if ([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
             e.preventDefault();
         }
     }, false);
@@ -107,37 +107,36 @@ window.onload = function() {
       let lastKeyPressed = ""
 
       function keyPush(e) {
-        switch (e.keyCode) {
-            case 37; //Left
-               if(lastKeyPressed !="right") {
-                spx = -speed
-                spy = 0
-                lastKeyPressed != "left"
-               };
-               break;
-            case 38: //up
-               if(lastKeyPressed != "down") {
-                spx = 0
-                spy = -speed
-                lastKeyPressed = "up"
-               };
-               break;
-            case 39: //right
-               if(lastKeyPressed !="left") {
-                spx = speed
-                spy = 0
-                lastKeyPressed = "right"
-               };
-               break;
-            case 40: //down
-               if(lastKeyPressed !="up") {
-                spc = 0
-                spy = speed
-                lastKeyPressed ="down"
-               };
-               break;
-
-        }
+          switch (e.keyCode) {
+              case 37: // Left
+                  if (lastKeyPressed != "right") {
+                      spx = -speed;
+                      spy = 0;
+                      lastKeyPressed = "left";
+                  }
+                  break;
+              case 38: // up
+                  if (lastKeyPressed != "down") {
+                      spx = 0;
+                      spy = -speed;
+                      lastKeyPressed = "up";
+                  }
+                  break;
+              case 39: // right
+                  if (lastKeyPressed != "left") {
+                      spx = speed;
+                      spy = 0;
+                      lastKeyPressed = "right";
+                  }
+                  break;
+              case 40: // down
+                  if (lastKeyPressed != "up") {
+                      spx = 0;
+                      spy = speed;
+                      lastKeyPressed = "down";
+                  }
+                  break;
+          }
       }
 
-}
+};

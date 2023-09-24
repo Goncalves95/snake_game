@@ -43,6 +43,10 @@ body {
     font-weight: 900;
 }
 
+a {
+    color: white;
+}
+
 canvas {
     border: 3px solid #28262c;
     border-radius: 10px 10px 0 0;
