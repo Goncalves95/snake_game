@@ -12,9 +12,9 @@ window.onload = function() {
 
     document.addEventListener("keydown", keyPush);
 
-    const easy = document.getElementById('js-easy');
-    const medium = document.getElementById('js-medium');
-    const hard = document.getElementById('js-hard');
+    const easy = document.getElementById('easy');
+    const medium = document.getElementById('medium');
+    const hard = document.getElementById('hard');
 
     setInterval(game, 70);
 
