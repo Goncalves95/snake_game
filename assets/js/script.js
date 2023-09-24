@@ -1,4 +1,4 @@
-window.onload = finction() {
+window.onload = function() {
 
     // Pick up on element from canvas by ID
     let area = document.getElementById('area');
@@ -110,7 +110,7 @@ window.onload = finction() {
         switch (e.keyCode) {
             case 37; //Left
                if(lastKeyPressed !="right") {
-                spx = -vel
+                spx = -speed
                 spy = 0
                 lastKeyPressed != "left"
                };
@@ -118,13 +118,13 @@ window.onload = finction() {
             case 38: //up
                if(lastKeyPressed != "down") {
                 spx = 0
-                spy = -vel
+                spy = -speed
                 lastKeyPressed = "up"
                };
                break;
             case 39: //right
                if(lastKeyPressed !="left") {
-                spx = vel
+                spx = speed
                 spy = 0
                 lastKeyPressed = "right"
                };
@@ -132,7 +132,7 @@ window.onload = finction() {
             case 40: //down
                if(lastKeyPressed !="up") {
                 spc = 0
-                spy = vel
+                spy = speed
                 lastKeyPressed ="down"
                };
                break;
