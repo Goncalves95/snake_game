@@ -107,7 +107,37 @@ window.onload = finction() {
       let lastKeyPressed = ""
 
       function keyPush(e) {
-        switch
+        switch (e.keyCode) {
+            case 37; //Left
+               if(lastKeyPressed !="right") {
+                spx = -vel
+                spy = 0
+                lastKeyPressed != "left"
+               };
+               break;
+            case 38: //up
+               if(lastKeyPressed != "down") {
+                spx = 0
+                spy = -vel
+                lastKeyPressed = "up"
+               };
+               break;
+            case 39: //right
+               if(lastKeyPressed !="left") {
+                spx = vel
+                spy = 0
+                lastKeyPressed = "right"
+               };
+               break;
+            case 40: //down
+               if(lastKeyPressed !="up") {
+                spc = 0
+                spy = vel
+                lastKeyPressed ="down"
+               };
+               break;
+
+        }
       }
 
 }
