@@ -12,8 +12,8 @@ body {
 
 #area {
     display: flex;
-    width: 800px;
-    height: 800px;
+    /* width: 800px;
+    height: 800px;*/
 }
 
 .game {

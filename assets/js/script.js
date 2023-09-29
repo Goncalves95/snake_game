@@ -25,7 +25,7 @@ window.onload = function() {
     let spx = 0;
     let spy = 0;
 
-    // Started poit 
+    // Started point 
     let stx = 10;
     let sty = 15;
 
@@ -49,15 +49,15 @@ window.onload = function() {
 
         // For snake control on the boards rps
         if (stx < 0) {
-            sty = qtp-1;
+            stx = qtp-1;
         }
         if (stx > qtp-1) {
-            sty = 0;
+            stx = 0;
         }
-        if (stx < 0) {
+        if (sty < 0) {
             sty = qtp-1;
         }
-        if (stx > qtp-1) {
+        if (sty > qtp-1) {
             sty = 0;
         }
 
