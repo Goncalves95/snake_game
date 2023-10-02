@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@100;400&family=Roboto:ital,wght@0,100;0,400;0,500;1,100;1,300&display=swap');
 
+/* variables */
+:root {
+    --DarkBlue: #111D4A;
+    --LightBlue: #0093E9;
+    --Black: #171B26;
+    --White: #ffffff;
+    --Red: #FF003D;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,14 +19,49 @@ body {
     display: grid;
     justify-content: center;
     min-height: 100vh;
-    background-color: #0093E9;
+    background-color: var(--LightBlue);
     background-image: linear-gradient(320deg, #0093E9 0%, #80D0C7 60%);
     color: white;
 }
 
+a {
+    text-decoration: none;
+}
+/* index page*/
+.start {
+    display: flex;
+    padding-top: 400px;
+    
+}
+
+.button-start {
+    color: var(--Black);
+}
+
+.buttom-start:hover {
+    background-color: var(--Red);
+    color: var(--Red);
+
+}
+
+.copy {
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 20px;
+}
+
+
+/* Game Page */
 header {
     display: flex;
     justify-content: center;
+}
+.logo {
+    color: var(--White);
+    padding-top: 40px;
+    margin: auto;
+
+
 }
 
 .game {
@@ -27,12 +71,13 @@ header {
     flex-direction: column;
     overflow: hidden;
     justify-content: center;
-    background-color: #111D4A;
+    background-color: var(--DarkBlue);
 }
 
 .game-details {
     font-weight: 500;
-    color: #B8C6DC;
+    color: var(--White);
+    background: var(--Black);
     font-size: 1.2rem;
     padding: 20px 27px;
     display: flex;
@@ -40,7 +85,7 @@ header {
 }
 
 .area {
-    background: #111D4A;
+    background: var(--DarkBlue);
     height: 100%;
     width: 100%;
     display: grid;
@@ -48,7 +93,7 @@ header {
 }
 
 .area .food {
-    background: #FF003D;
+    background: var(--Red);
 }
 
 .area .head {
@@ -61,8 +106,8 @@ button {
     padding: 1rem 2rem;
     margin: 0;
     text-decoration: none;
-    background: #0069ed;
-    color: #ffffff;
+    background: var(--LightBlue);
+    color: var(--White);
     font-family: sans-serif;
     font-size: 1rem;
     cursor: pointer;
@@ -76,8 +121,8 @@ button {
 
 button:hover,
 button:focus {
-    background: white;
-    color: black;
+    background: var(--White);
+    color: var(--White);
 }
 
 button:focus {
@@ -98,7 +143,7 @@ button:active {
     padding: 25px 0;
     text-align: center;
     font-size: 1.3rem;
-    color: #B8C6DC;
+    color: var(--White);
     width: calc(100% / 4);
     cursor: pointer;
     border-right: 1px solid #171B26;
@@ -116,7 +161,7 @@ footer>div {
     max-width: 400px;
     padding: 1em 1em;
     height: fit-content;
-    color: white;
+    color: var(--White);
     text-align: center;
     font-size: 1em;
 }
@@ -130,11 +175,11 @@ footer>div {
 
 #social i {
     font-size: 2em;
-    color: #0069ed;
+    color: var(--LightBlue);
 }
 
 #social i:hover {
-    color: white;
+    color: var(--White);
 }
 
 /* Media Squeare */
