@@ -45,10 +45,10 @@ controls.forEach(button => button.addEventListener("click", () => changeDirectio
 const initGame = () => {
     if (gameOver) return handleGameOver();
     let html = `<div class="food" style="grid-area: ${mouseY} / ${mouseX}"></div>`;
-    // Checking if the snake hit the food
+    // Checking if the snake hit the mouse
     if (snakeX === mouseX && snakeY === mouseY) {
         updateFood();
-        snakeBody.push([mouseY, mouseX]); // Pushing food position to snake body array
+        snakeBody.push([mouseY, mouseX]); // Pushing mouse to snake body array
         score++; // increment score by 1
         highScore = score >= highScore ? score : highScore;
         localStorage.setItem("high-score", highScore);
