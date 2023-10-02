@@ -1,144 +1,88 @@
-window.onload = function() {
+const area = document.getElementsByClassName("area");
+const scoreElement = document.getElementsByClassName("score");
+const controls = document.querySelectorAll(".controls i");
 
-    // Pick up on element from div by class name
-    let area = document.getElementsByClassName('area');
-    //Let the area contxt to 2D
+let gameOver = false;
+let mouseX, mouseY;
+let snakeX = 5, snakeY = 5;
+let speedX = 0, speedY = 0;
+let snakeBody = [];
+let setIntervalId;
+let score = 0;
 
-    // Score Board
-    let poits = document.getElementById('poits');
-    let poiti = 0;
+const updateFood = () => {
+    // Passing a random 1 - 30 value as food new position
+    mouseX = Math.floor(Math.random() * 30) + 1;
+    mouseY = Math.floor(Math.random() * 30) + 1;
+};
 
+const handleGameOver = () => {
+    // Clearing the timer and reloading the page on game over
+    clearInterval(setIntervalId);
+    alert("Game Over! :P Press OK to replay...");
+    location.reload();
+};
 
-    document.addEventListener("keydown", keyPush);
+const changeDirection = e => {
+    // Changing velocity value based on key press
+    if (e.key === "ArrowUp" && speedY != 1) {
+        speedX = 0;
+        speedY = -1;
+    } else if (e.key === "ArrowDown" && speedY != -1) {
+        speedX = 0;
+        speedY = 1;
+    } else if (e.key === "ArrowLeft" && speedX != 1) {
+        speedX = -1;
+        speedY = 0;
+    } else if (e.key === "ArrowRight" && speedX != -1) {
+        speedX = 1;
+        speedY = 0;
+    }
+};
 
-    const easy = document.getElementById('easy');
-    const medium = document.getElementById('medium');
-    const hard = document.getElementById('hard');
+// Calling changeDirection on each key click and passing key dataset value as an object
+controls.forEach(button => button.addEventListener("click", () => changeDirection({ key: button.dataset.key })));
 
-    setInterval(game, 70);
+const initGame = () => {
+    if (gameOver) return handleGameOver();
+    let html = `<div class="food" style="grid-area: ${mouseY} / ${mouseX}"></div>`;
 
-    //  How much the snake grow up with the poits
-    const speed = 1;
+    // Checking if the snake hit the food
+    if (snakeX === mouseX && snakeY === mouseY) {
+        updateFood();
+        snakeBody.push([mouseY, mouseX]); // Pushing food position to snake body array
+        score++; // increment score by 1
+        highScore = score >= highScore ? score : highScore;
+        localStorage.setItem("high-score", highScore);
+        scoreElement.innerText = `Score: ${score}`;
+        highScoreElement.innerText = `High Score: ${highScore}`;
+    }
+    // Updating the snake's head position based on the current velocity
+    snakeX += speedX;
+    snakeY += speedY;
 
-    // Inicial speed
-    let spx = 0;
-    let spy = 0;
+    // Shifting forward the values of the elements in the snake body by one
+    for (let i = snakeBody.length - 1; i > 0; i--) {
+        snakeBody[i] = snakeBody[i - 1];
+    }
+    snakeBody[0] = [snakeX, snakeY]; // Setting first element of snake body to current snake position
 
-    // Started point 
-    let stx = 10;
-    let sty = 15;
-
-    // Point size
-    const psz = 20;
-
-    // Quantity of poits
-    const qtp = 20;
-
-    // Started mouse point
-    let mousex = 15;
-    let mousey = 15;
-
-    // Array for the snake tail
-    let tail = [];
-
-    function game() {
-
-        stx += spx;
-        sty += spy;
-
-        // For snake control on the boards rps
-        if (stx < 0) {
-            stx = qtp-1;
-        }
-        if (stx > qtp-1) {
-            stx = 0;
-        }
-        if (sty < 0) {
-            sty = qtp-1;
-        }
-        if (sty > qtp-1) {
-            sty = 0;
-        }
-
-        
-        contx.fillStyle ="#111D4A";
-        // javascript contex.fillRect (x, y, = altura, largura)
-        contx.fillRect(0, 0, area.width, area.height);
-        
-        contx.fillStyle = "#EA2B1F";
-        contx.fillRect(mousex * psz, mousey * psz, psz, psz, 2, 2);
-
-        // For ([inicialExpretion]; [condition]; [increment]) declaration
-        for (let i = 0; i < tail.length; i++) {
-            contx.fillStyle ="green"
-            contx.stokeStyle ="green"
-            contx.fillRect(tail[i].x * psz, tail[i].y * psz, psz, psz);
-            contx.strokeRect(tail[i].x * psz, tail[i].y * psz, psz, psz);
-            if (tail[i].x == stx && tail[i].y == sty) {
-                spx = spy = 0;
-                taile = 2;
-                poiti = 0;
-            }
-        }
-
-        tail.push({x: stx, y: sty})
-
-        while (tail.length > taile) {
-            tail.shift()
-        }
-
-        if (mousex==stx && mousey==sty){
-            taile++
-            mousex = Math.floor(Math.random() * qtp)
-            mousey = Math.floor(Math.random() * qtp)
-
-            poits.innerHTML = ++poiti
-        }
-
+    // Checking if the snake's head is out of wall, if so setting gameOver to true
+    if (snakeX <= 0 || snakeX > 30 || snakeY <= 0 || snakeY > 30) {
+        return gameOver = true;
     }
 
-    window.addEventListener("keydown", function (e) {
-        // Space and arrow keys
-        if ([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
-            e.preventDefault();
+    for (let i = 0; i < snakeBody.length; i++) {
+        // Adding a div for each part of the snake's body
+        html += `<div class="head" style="grid-area: ${snakeBody[i][1]} / ${snakeBody[i][0]}"></div>`;
+        // Checking if the snake head hit the body, if so set gameOver to true
+        if (i !== 0 && snakeBody[0][1] === snakeBody[i][1] && snakeBody[0][0] === snakeBody[i][0]) {
+            gameOver = true;
         }
-    }, false);
-
-      let lastKeyPressed = ""
-
-      function keyPush(e) {
-          switch (e.keyCode) {
-              case 37: // Left
-                  if (lastKeyPressed != "right") {
-                      spx = -speed;
-                      spy = 0;
-                      lastKeyPressed = "left";
-                  }
-                  break;
-              case 38: // up
-                  if (lastKeyPressed != "down") {
-                      spx = 0;
-                      spy = -speed;
-                      lastKeyPressed = "up";
-                  }
-                  break;
-              case 39: // right
-                  if (lastKeyPressed != "left") {
-                      spx = speed;
-                      spy = 0;
-                      lastKeyPressed = "right";
-                  }
-                  break;
-              case 40: // down
-                  if (lastKeyPressed != "up") {
-                      spx = 0;
-                      spy = speed;
-                      lastKeyPressed = "down";
-                  }
-                  break;
-          }
-      }
-
-      area.innerHTML = html;
-
+    }
+    area.innerHTML = html;
 };
+
+updateFood();
+setIntervalId = setInterval(initGame, 100);
+document.addEventListener("keyup", changeDirection);

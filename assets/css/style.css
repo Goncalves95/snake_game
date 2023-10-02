@@ -22,20 +22,20 @@ header {
 }
 
 .game {
+    width: 65vmin;
+    height: 70vmin;
     display: flex;
-    width: 80vmin;
-    height: 80vmin;
     flex-direction: column;
     overflow: hidden;
     justify-content: center;
     background-color: #111D4A;
 }
 
-.game-area {
+.game-details {
     font-weight: 500;
     color: #B8C6DC;
     font-size: 1.2rem;
-    padding: 20px 20px;
+    padding: 20px 27px;
     display: flex;
     justify-content: space-between;
 }
@@ -48,27 +48,14 @@ header {
     grid-template: repeat(30, 1fr) / repeat(30, 1fr);
 }
 
-
-.level {
-    list-style: none;
-    margin: 0;
-    padding: 20px;
+.area .food {
+    background: #FF003D;
 }
 
-.level li {
-    margin-bottom: 10px;
+.area .head {
+    background: #60CBFF;
 }
-
-.score {
-    background: #111D4A;
-    border-radius: 0 0 10px 10px;
-    margin: 0px;
-    padding: 20px;
-    list-style: none;
-    text-align: center;
-    font-weight: 900;
-}
-
+/* bootons for nivel game */
 button {
     display: inline-block;
     border: none;
@@ -102,7 +89,23 @@ button:focus {
 button:active {
     transform: scale(0.99);
 }
+/* Controls area for small screens */
+.controls {
+    display: none;
+    justify-content: space-between;
+}
 
+.controls i {
+    padding: 25px 0;
+    text-align: center;
+    font-size: 1.3rem;
+    color: #B8C6DC;
+    width: calc(100% / 4);
+    cursor: pointer;
+    border-right: 1px solid #171B26;
+}
+
+/* Footer */
 footer {
     display: flex;
     justify-content: center;
@@ -146,4 +149,13 @@ footer>div {
         font-size: 1rem;
         padding: 15px 15px;
     }
+
+    .controls {
+        display: flex;
+    }
+    
+    .controls i {
+        padding: 15px 0;
+        font-size: 1rem;
+       }
 }
