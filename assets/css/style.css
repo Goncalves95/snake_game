@@ -1,30 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@100;400&family=Roboto:ital,wght@0,100;0,400;0,500;1,100;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    justify-content: center;
+    min-height: 100vh;
     background-color: #0093E9;
     background-image: linear-gradient(320deg, #0093E9 0%, #80D0C7 60%);
-    height: 100vh;
-    
     color: white;
 }
 
-
-#area {
+header {
     display: flex;
-    /* width: 800px;
-    height: 800px;*/
+    justify-content: center;
+
 }
 
 .game {
     display: flex;
+    width: 80vmin;
+    height: 80vmin;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    background-color: #111D4A;
 }
-
 
 .game-area {
+    font-weight: 500;
+    color: #B8C6DC;
+    font-size: 1.2rem;
+    padding: 20px 20px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
 }
+
+.area {
+    background: #111D4A;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+}
+
 
 .level {
     list-style: none;
@@ -44,15 +67,6 @@ body {
     list-style: none;
     text-align: center;
     font-weight: 900;
-}
-
-a {
-    color: white;
-}
-
-canvas {
-    border: 3px solid #28262c;
-    border-radius: 10px 10px 0px 0px;
 }
 
 button {
@@ -90,8 +104,8 @@ button:active {
 }
 
 footer {
+    display: flex;
     justify-content: center;
-    align-items: center;
     height: auto;
 }
 
@@ -102,7 +116,6 @@ footer>div {
     height: fit-content;
     color: white;
     text-align: center;
-    font-family: var(--sans-font);
     font-size: 1em;
 }
 
@@ -120,4 +133,17 @@ footer>div {
 
 #social i:hover {
     color: white;
+}
+
+/* Media Squeare */
+@media screen and (max-width: 800px) {
+    .game{
+        width: 70vh;
+        height: 70vh;
+    }
+
+    .game-area {
+        font-size: 1rem;
+        padding: 15px 15px;
+    }
 }

@@ -1,9 +1,8 @@
 window.onload = function() {
 
-    // Pick up on element from canvas by ID
-    let area = document.getElementById('area');
+    // Pick up on element from div by class name
+    let area = document.getElementsByClassName('area');
     //Let the area contxt to 2D
-    let contx = area.getContext("2d");
 
     // Score Board
     let poits = document.getElementById('poits');
@@ -139,5 +138,7 @@ window.onload = function() {
                   break;
           }
       }
+
+      area.innerHTML = html;
 
 };

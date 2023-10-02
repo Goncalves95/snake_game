@@ -8,26 +8,35 @@
     <title>Feed the Snake!</title>
 </head>
 <body>
-    <h1 class="heading">
+    <header class="heading">
+        <h1>
         <img src="" alt="">Feed the Snake!
-    </h1>
+        </h1>
+    </header>
     <!-- Game Area -->
-    <div class="game">
-        <div class="game-area">
-            <canvas id="area" width="400" height="400"></canvas>
-            <!-- Score Area -->
-            <div class="score">Score:<span id="poits">0</span>
+    <main>
+        <div class="game">
+            <div class="game-area">
+                <!-- Score Area -->
+                <div class="score">Score:<span id="poits">0</span>
+                <div class="area"></div>
+                </div>
+            </div>
+            <!-- Choose the Level 
+            <ul class="level">
+                <li>Choose the Level:</li>
+                <li><button id="easy">Easy</button></li>
+                <li><button id="medium">Medium</button></li>
+                <li><button id="hard">Hard</button></li>
+            </ul> -->
+            <div class="controls">
+                <i data-key="ArrowLeft" class="fa-solid fa-arrow-left-long"></i>
+                <i data-key="ArrowUp" class="fa-solid fa-arrow-up-long"></i>
+                <i data-key="ArrowRight" class="fa-solid fa-arrow-right-long"></i>
+                <i data-key="ArrowDown" class="fa-solid fa-arrow-down-long"></i>
             </div>
         </div>
-        <!-- Choose the Level 
-        <ul class="level">
-            <li>Choose the Level:</li>
-            <li><button id="easy">Easy</button></li>
-            <li><button id="medium">Medium</button></li>
-            <li><button id="hard">Hard</button></li>
-        </ul> -->
-    </div>
-    <br>
+    </main>
     <br>
     <!-- Footer -->
 <footer aria-labelledby="social">
