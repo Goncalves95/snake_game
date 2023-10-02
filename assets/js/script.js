@@ -23,6 +23,7 @@ const handleGameOver = () => {
     alert("Game Over! Press OK to replay...");
     location.reload();
 };
+
 const changeDirection = e => {
     // Changing speed value based on key press
     if (e.key === "ArrowUp" && speedY != 1) {
