@@ -27,7 +27,7 @@ body {
 a {
     text-decoration: none;
 }
-/* index page*/
+/* Index page*/
 .start {
     display: flex;
     padding-top: 400px;
@@ -43,7 +43,22 @@ a {
     color: var(--Red);
 
 }
+/* information */
+.good-game {
 
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 3s steps(33) infinite alternate,
+         blink 500ms steps(33) infinite normal;
+}
+
+.good-game2 {
+    text-align: center;
+    color: var(--White);
+}
+
+/* Footer index page */
 .copy {
     justify-content: center;
     align-items: flex-end;
@@ -55,6 +70,7 @@ a {
 header {
     display: flex;
     justify-content: center;
+    padding-top: 20px;
 }
 .logo {
     color: var(--White);
@@ -154,6 +170,8 @@ footer {
     display: flex;
     justify-content: center;
     height: auto;
+    align-items: flex-end;
+    padding-bottom: 20px;
 }
 
 footer>div {
