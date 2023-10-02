@@ -2,6 +2,8 @@ const area = document.querySelector(".area");
 const scoreElement = document.querySelector(".score");
 const highScoreElement = document.querySelector(".high-score");
 const controls = document.querySelectorAll(".controls i");
+
+// Game variables 
 let gameOver = false;
 let mouseX, mouseY;
 let snakeX = 5, snakeY = 5;
@@ -9,6 +11,12 @@ let speedX = 0, speedY = 0;
 let snakeBody = [];
 let setIntervalId;
 let score = 0;
+
+// Sounds Variables
+let mute = false
+const gameOverAudio = new Audio('asserts/audio/videogameover');
+
+
 // Getting high score from the local storage
 let highScore = localStorage.getItem("high-score") || 0;
 highScoreElement.innerText = `High Score: ${highScore}`;
