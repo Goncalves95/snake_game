@@ -30,30 +30,48 @@ a {
 /* Index page*/
 .start {
     display: flex;
-    padding-top: 400px;
+    margin: auto;
     
 }
 
 .button-start {
     color: var(--Black);
+    border-radius: 50%;
 }
 
-.buttom-start:hover {
+.button-start:hover {
     background-color: var(--Red);
-    color: var(--Red);
-
 }
 /* information */
-.good-game {
-
+h2 {
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
-    animation: typewriter 3s steps(33) infinite alternate,
-         blink 500ms steps(33) infinite normal;
+    animation: typewriter 3s steps(13) infinite alternate,
+        blink 800ms steps(20) infinite normal;
+    border-right: 5px solid black;
 }
 
-.good-game2 {
+@keyframes typewriter {
+    from {
+        width: 20%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: var(--White);
+    }
+
+    to {
+        border-color: transparent;
+    }
+}
+h3 {
     text-align: center;
     color: var(--White);
 }
@@ -63,6 +81,11 @@ a {
     justify-content: center;
     align-items: flex-end;
     padding-bottom: 20px;
+    color: var(--White);
+}
+
+.copy a {
+    color: var(--White);
 }
 
 
