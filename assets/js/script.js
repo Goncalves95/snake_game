@@ -14,7 +14,7 @@ let score = 0;
 
 // Sounds Variables
 let mute = false
-const gameOverAudio = new Audio('asserts/audio/videogameover');
+const gameOverAudio = new Audio('assets/audio/videogameover');
 
 
 // Getting high score from the local storage
