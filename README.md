@@ -1,10 +1,10 @@
 # Feed the Snake!
 
-This website was created from an idea I had while I was a private chef in the Algarve, Portugal. Our main service was to cater for families who were going on vacation in the region and wanted a private chef service in their homes.
+After learning JavaScript I decided to create a game. That's when the idea came to me to create the most addictive game of my youth. I remember very well playing this game on the Nokia. So I decided to create a version of the Snake Game.
 
-The website will be aimed at people interested in having a premium service, such as having their own professional chef cook for them.
+The game is meant to be enjoyed and to bring back good memories for users.
 
-![Responsice Mockup](assets/media/responsive2.png)
+![Responsice Mockup](assets/media/responsive_snakegame.png)
 
 [See deployed website](https://goncalves95.github.io/snake_game/)
 
@@ -15,7 +15,7 @@ The website will be aimed at people interested in having a premium service, such
   - [Design and User Experience](#design-and-user-experience)
     - [Design](#design)
   - [Features](#features)
-    - [Navbar and footer](#navbar-and-footer)
+    - [Footer](#footer)
     - [Home Page](#home-page)
     - [Gallery Page](#gallery-page)
     - [Contact Page](#contact-page)
@@ -37,13 +37,11 @@ The website will be aimed at people interested in having a premium service, such
 
 ### Design
 
-The design of the website is minimalist, to allow the content to show up.
+The design of the website is minimalist, and the same time fun, for the user can experience a game page simple and concentrated on the game.
 
 Fonts:
 
-- Poiret one - This is the brand font, so it's used for the Logo, the Wines names and the tasting expeciences names.
-- Montserrat (sans serif) - Used for the headings, the menu and the footer.
-- Cormorant Garamond (serif) - As serif font is used for the smaller text (paragraphh content), it's more readable.
+- Roboto - This font is visible throughout the structure of the site
 
 Colours:
 
@@ -53,21 +51,12 @@ Colours:
 
 ## Features
 
-There are three pages: Home page, Gallery and Contact.
-In each page we have a responsive navbar on top and a footer with social media links and a coopyright section.
+There are two pages: Home page and Game page.
 
-### Navbar and footer
+- On the Home page, we can find a large start button, referring to the world of games and interacting with the user to press start. There is also an animated backgroud. On this page we can also find a short message for users to have a better experience with the game and a footer with the author's name and the link to the GitHub page.
+- oOn the Game page, we can find a Header, the game div and a footer with the social media icons and copyrights.
 
-Both navbar and footer change layout depending on the size of the screen.
-
-- __Navigation bar__
-
-  - All the navigation items are visible on larger screen (769px and up), while they are hidden in a colapsing navbar on smaller screens (768px and down).
-
-  - The colapsing navbar has an hamburger menu icon when it's closed, and an x symbol when it's open.
-
-![Responsice Navbar items visible](assets/media/navbar-itms-visible.png)
-![Responsice Navbar hamburguer](assets/media/navbar-hamburguer.png)
+### Footer
 
 - __Footer__
 
@@ -77,7 +66,7 @@ Both navbar and footer change layout depending on the size of the screen.
 
   - When clicking on the social links, this gone open in a new tab.
 
-![Footer](assets/media/footer.png)
+![Footer](assets/media)
 
 ### Home Page
 
