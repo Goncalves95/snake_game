@@ -279,6 +279,49 @@ button:focus {
 button:active {
     transform: scale(0.99);
 }
+
+/* Page 404 */
+.error {
+    font-weight: 900;
+    font-size: 500px;
+    line-height: 1;
+    margin-bottom: -10px;
+    opacity: 0.6;
+    text-align: center;
+    animation: colordancing 4s infinite;
+
+}
+
+@keyframes colordancing {
+    0% {
+        color: #D1F2A5;
+    }
+
+    25% {
+        color: #F56991;
+    }
+
+    50% {
+        color: #00ffa1;
+    }
+
+    75% {
+        color: #ffae00;
+    }
+
+    100% {
+        color: #ffa500;
+    }
+}
+
+.not-found {
+    text-align: center;
+    font-size: 250%;
+    color: var(--White);
+}
+
+
+
 /* Controls area for tablet screens */
 .controls {
     display: none;
@@ -349,5 +392,8 @@ footer>div {
     .controls i {
         padding: 15px 0;
         font-size: 1rem;
-       }
+    }
+    header {
+        font-size: 100%;
+    }
 }
