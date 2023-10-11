@@ -3,7 +3,7 @@ const scoreElement = document.querySelector(".score");
 const highScoreElement = document.querySelector(".high-score");
 const controls = document.querySelectorAll(".controls i");
 
-// Game variables 
+// Game variables sections
 let gameOver = false;
 let mouseX, mouseY;
 let snakeX = 5, snakeY = 5;
@@ -11,7 +11,6 @@ let speedX = 0, speedY = 0;
 let snakeBody = [];
 let setIntervalId;
 let score = 0;
-
 
 // Getting high score from the local storage
 let highScore = localStorage.getItem("high-score") || 0;
@@ -21,6 +20,7 @@ const updateFood = () => {
     mouseX = Math.floor(Math.random() * 30) + 1;
     mouseY = Math.floor(Math.random() * 30) + 1;
 };
+// GameOver section
 const handleGameOver = () => {
     // Clearing the timer and reloading the page on game over
     clearInterval(setIntervalId);
@@ -29,7 +29,7 @@ const handleGameOver = () => {
 };
 
 const changeDirection = e => {
-    // Changing speed value based on key press
+    // Changing speed value based on key press for changing direction
     if (e.key === "ArrowUp" && speedY != 1) {
         speedX = 0;
         speedY = -1;
@@ -53,7 +53,7 @@ const initGame = () => {
     if (snakeX === mouseX && snakeY === mouseY) {
         updateFood();
         snakeBody.push([mouseY, mouseX]); // Pushing mouse to snake body array
-        score++; // increment score by 1
+        score++; // increment score by 1+
         highScore = score >= highScore ? score : highScore;
         localStorage.setItem("high-score", highScore);
         scoreElement.innerText = `Score: ${score}`;
@@ -63,7 +63,7 @@ const initGame = () => {
     snakeX += speedX;
     snakeY += speedY;
 
-    // Shifting forward the values of the elements in the snake body by one
+    // Shifting forward the values of the elements in the snake body by 1
     for (let i = snakeBody.length - 1; i > 0; i--) {
         snakeBody[i] = snakeBody[i - 1];
     }
