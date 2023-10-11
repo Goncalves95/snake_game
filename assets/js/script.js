@@ -12,10 +12,6 @@ let snakeBody = [];
 let setIntervalId;
 let score = 0;
 
-// Sounds Variables
-let mute = false
-const gameOverAudio = new Audio('assets/audio/videogameover');
-
 
 // Getting high score from the local storage
 let highScore = localStorage.getItem("high-score") || 0;
@@ -72,7 +68,7 @@ const initGame = () => {
         snakeBody[i] = snakeBody[i - 1];
     }
     snakeBody[0] = [snakeX, snakeY]; // Setting first element of snake body to current snake position
-    // Checking if the snake's head is out of wall, if so setting gameOver to true
+    // Checking if the snake's head is on the wall, if so setting gameOver to true
     if (snakeX <= 0 || snakeX > 30 || snakeY <= 0 || snakeY > 30) {
         return gameOver = true;
     }
