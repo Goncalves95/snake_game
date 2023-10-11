@@ -200,6 +200,10 @@ To test my game I have opened it on different devices, to see if it was working 
 
 I have tested the performance in chrome, using lighthouse:
 
+- Performance rate:
+
+   ![Performance](assets/media/web_performance.png)
+
 <details>
   <summary> Desktop </summary>
   
