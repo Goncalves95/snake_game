@@ -259,7 +259,7 @@ The live link can be found here - [Live Website](https://goncalves95.github.io/s
 - Lerning the CSS @keyframes Rule on [W3School](https://www.w3schools.com/cssref/css3_pr_animation-keyframes.php)
 - The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
 - Instructions on how creat a animated backgroud in the form were taken from [Alvaro Trigo](https://alvarotrigo.com/blog/animated-backgrounds-css/)
-- 
+- Arrows on game area [Loopnerd](https://www.loopnerd.com.br/)
 - The following fonts, used for the project, are from [Google Fonts](https://fonts.google.com/):
   - Roboto
 
@@ -267,7 +267,7 @@ The live link can be found here - [Live Website](https://goncalves95.github.io/s
 
 - Image for FavIcon [gratispng.com](https://www.gratispng.com/png-bk4p3c/)
 - Image for the start button [Flaticon](https://www.flaticon.com/br/icone-gratis/botao-de-inicio_5261101)
-- Sounds taken from Pixabay.
+- Sounds taken from Pixabay [Pixabay](https://pixabay.com/)
 
 ## Technologies used
 
