@@ -110,9 +110,14 @@ The homebage containg the information about the company. In particular it contai
 
 - __Game Area__
 
-  - In this area it´s where the game it´s creat .
+  - This area contains the div where the JavaScript code was developed. In this area we find a field of blocks where the rats (the snake's food) will appear and where the snake will travel to catch all the rats. .
 
-![Header](assets/media/heading_web.png)
+![Game Area](assets/media/game_area_web.png)
+
+- __Score Area__
+- In the score area, you can find the score of the current game on the left and the maximum score achieved in that section on the right.
+
+![Score Area](assets/media/score_area_web.png)
 
 ### 404 Error Page
 
