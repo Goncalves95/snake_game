@@ -1,8 +1,8 @@
 # Feed the Snake!
 
-After learning JavaScript I decided to create a game. That's when the idea came to me to create the most addictive game of my youth. I remember very well playing this game on the Nokia. So I decided to create a version of the Snake Game.
+I made the decision to create a game after learning JavaScript. During that time, I came up with the idea of creating the most addictive game of my youth. I remember very well playing this game on the Nokia. So I decided to create a version of the Snake Game.
 
-The game is meant to be enjoyed and to bring back good memories for users.
+The game is designed to be enjoyable and bring back pleasant memories for its users.
 
 ![Responsice Mockup](assets/media/responsive_snakegame.png)
 
@@ -36,7 +36,7 @@ The game is meant to be enjoyed and to bring back good memories for users.
 
 ### Design
 
-The design of the website is minimalist, and the same time fun, for the user can experience a game page simple and concentrated on the game.
+The design of the website is minimalist, yet fun. The user can experience a game page that is simple and focused on the game.
 
 Fonts:
 
@@ -57,27 +57,27 @@ Colours:
 
 There are tree pages: Home page, Game page and 404 Error page:
 
-- On the Home page, we can find a large start button, referring to the world of games and interacting with the user to press start. There is also an animated backgroud. On this page we can also find a short message for users to have a better experience with the game and a footer with the author's name and the link to the GitHub page.
-- On the Game page, we can find a Header, the game div and a footer with the social media icons and copyrights.
-- On the 404 Error page the user can find the big numbers 404 with animation, the mensage "page not finde", one link to come to home page and a footer with the author's name and the link to the GitHub page.
+- On the home page, we can find a large start button that refers to the world of games and interacts with the user to press start. An animated background is also present. A short message to enhance the user's experience with the game can be found on this page, along with a footer containing the author's name and a link to their GitHub page.
+- The Game page has a header, game section, and a footer that includes social media icons and copyrights.
+- The 404 Error page has big numbers with animation, the message 'page not found', a link to go to the home page, and a footer with the author's name and a link to the GitHub page.
 
 ### Footer
 
 - __Footer__
 
-  - The footer on  game page contains:
+  - The game page's footer contains:
     - copyrights
     - social media links
 
-  - When clicking on the social links, this gone open in a new tab.
+  - When clicking on the social links, it opens in a new tab.
 
 ![Footer Game page](assets/media/footer_web_game.png)
 
-  - The footer on home page and 404 page contains:
+  - The home and 404 page's footer contains:
     - copyrights
     - gitHub icon
 
-  - When clicking on the gitHub link, this gone open in a new tab.
+- When clicking on the social links, it opens in a new tab.
 
 ![Footer Home and 404 page](assets/media/footer_home_page_and_404.png)
 
@@ -85,17 +85,15 @@ There are tree pages: Home page, Game page and 404 Error page:
 
 - __StartButton__
 
-The homebage containg the information about the company. In particular it contains two distinc sections:
+The home page contains a big bottom starting:
 
-- The Algarve, one smal paragraph for descrive the Algarve, where is the work region of the company.
-
-- The about, where the user can finde and read what the company do and what can expect from them.
+- Clicking is a means for the user to begin playing.
 
 - __Information Users__
 
-  - A welcome message for the user.
-  - In this section I have placed a small text to inform the user for have the best experience its recomended playing on laptop or computer.  
-  - And a nice message to Good Game.
+  - A message of welcome to the user.
+  - In this section, I have placed a small text to inform the user that for the best experience, it is recommended to play on a laptop or computer.  
+  - A positive message to Good Game.
 
  ![Cards's](assets/media/main_page_web.png)
 
@@ -103,19 +101,19 @@ The homebage containg the information about the company. In particular it contai
 
 - __Header__
 
-  - This is the landing page for our users, so it has an header for fun.
+  - This is the landing page for our users, so it has a header for fun.
 
 ![Header](assets/media/heading_web.png)
 
 - __Game Area__
 
-  - This area contains the div where the JavaScript code was developed. In this area we find a field of blocks where the rats (the snake's food) will appear and where the snake will travel to catch all the rats. .
+  - This area contains the div where the JavaScript code was developed. In this area we find a field of blocks where the rats (the snake's food) will appear and where the snake will travel to catch all the rats.
 
 ![Game Area](assets/media/game_area_web.png)
 
 - __Game Area on Small Screens__
 
-  - What's different about the es area compared to the web is that for small screens I've added control keys on the screen (in the game div).
+  - What's different about the area compared to the web is that I have added control keys on the screen for small screens. (in the game div).
 
 ![Game Area](assets/media/arrow_game_mobil.png)
 
@@ -254,8 +252,8 @@ The live link can be found here - [Live Website](https://goncalves95.github.io/s
 
 ### Content
 
-- Ideas and some code  take and lerned for the snake game: [MundoJS](https://www.mundojs.com.br/2020/06/05/criando-jogo-snake-em-javascript-e-canvas/) [Rodrigo Gomes](https://codepen.io/digoart/pen/VgoVmj) [Programador BR](https://www.youtube.com/watch?v=Hua1OSXitdQ)
-- Typewrite como inspiration from [Rodrigo Gomes](https://codepen.io/rodrigofrumento/pen/GRZXpWa) [Acervo Lima](https://acervolima.com/como-criar-animacao-de-maquina-de-escrever-usando-html-e-css/)
+- Ideas and some code was taked and lerned for the snake game: [MundoJS](https://www.mundojs.com.br/2020/06/05/criando-jogo-snake-em-javascript-e-canvas/) [Rodrigo Gomes](https://codepen.io/digoart/pen/VgoVmj) [Programador BR](https://www.youtube.com/watch?v=Hua1OSXitdQ)
+- Typewrite inspiration from [Rodrigo Gomes](https://codepen.io/rodrigofrumento/pen/GRZXpWa) [Acervo Lima](https://acervolima.com/como-criar-animacao-de-maquina-de-escrever-usando-html-e-css/)
 - Lerning the CSS @keyframes Rule on [W3School](https://www.w3schools.com/cssref/css3_pr_animation-keyframes.php)
 - The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
 - Instructions on how creat a animated backgroud in the form were taken from [Alvaro Trigo](https://alvarotrigo.com/blog/animated-backgrounds-css/)
