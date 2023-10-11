@@ -7,6 +7,7 @@
     --Black: #171B26;
     --White: #ffffff;
     --Red: #FF003D;
+    --Green: #008000;
 }
 
 * {
@@ -244,7 +245,7 @@ header {
 }
 
 .area .head {
-    background: #60CBFF;
+    background: var(--Green);
 }
 /* bootons for nivel game */
 button {
