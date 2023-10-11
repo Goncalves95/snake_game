@@ -19,7 +19,6 @@ The game is meant to be enjoyed and to bring back good memories for users.
     - [Home Page](#home-page)
     - [Game Page](#game-page)
     - [404 Error Page](#404-error-page)
-    - [Booked Page](#booked-page)
   - [Testing](#testing)
     - [Tests](#tests)
     - [Validator Testing](#validator-testing)
@@ -121,31 +120,14 @@ The homebage containg the information about the company. In particular it contai
 
 ### 404 Error Page
 
-- This Page contains a form to contact the company and ask one quote.
-- The following fiels are required: Name, Email, Service equired,  Number of people, start and end date of the event.
-- There is an additional field to add other information or some doubt. not required field.
-- The select element for "Number of People" allows choosing the number of people for the events and, depending on the choice, the company's decision to hire more staff depending on the number of people attending the event, thus giving the client a better price for the service.
-- in this extra field exist on I icon with extra informtion for the user know what can fill up in this field.
+- On the 404 error page, you can find the 404 error numbers with a small color animation. Next we find the page not found information.
+- In the message Return to home page, if the user clicks on it, they will be redirected to the home page.
 
-- __Booked Page__
-
-  - After filling out all the mandatory field, users are redirected to a new page.
-  
-![Contact Page](assets/media/contact-form.png)
-
-### Booked Page
-
-- Have the Logo company in the Header.
-- Have a small video about Algarve so that users can get to know the region they're visiting better and discover more places to visit on their holidays or when they're in the Algarve.
-- Thank's message for the contact.
-- Company contact in case they have more questions or they need to cancel or modify the sercvie.
-- In the information existe the email, here the user can click on the link and open an email page with the company email address already filled in.  
-- In the contact information field there is also an address, which when selected opens the map in a new tab for directions to the location.
-- A call to action to bring the user back to the homepage, with direct link, so that users are not redirected automatically. The user can clic on the message "back to Home " or in the LOGO.
+![404 page](assets/media/error_404_page_web.png)
 
 ## Testing
 
-To test my website I have opened it on different devices, to see if it was working as expected.
+To test my game I have opened it on different devices, to see if it was working as expected.
 
 - Browser tested:
   - Chrome
@@ -166,16 +148,6 @@ To test my website I have opened it on different devices, to see if it was worki
   |Copy url of the browser and paste it in browser. Press enter | Browser should load index.html | Pass |
   |Scale up the window | The contentent should not stretch over a certain size | Pass |
   |Scale down the window | The contentent should be visible without having to scroll horizontally | Pass |
-  |Scale down under 840px width | The layout should switch from 2 to 1 column | Pass |
-
-  </details>
-
-  <details>
-  <summary>Navigation</summary>
-
-  |Action | Expected behavious | Result|
-  |-------|--------------------|-------|
-  |Scale down under 769px width | The top navigation bar should collapse into hamburger navbar | Pass |
 
   </details>
 
@@ -185,41 +157,34 @@ To test my website I have opened it on different devices, to see if it was worki
   |Action | Expected behavious | Result|
   |-------|--------------------|-------|
   |Click on the LinkedIn icon in the footer | It should open LinkedIn in a new tab | Pass |
-  |Click on the Instagram icon in the footer | It should open Instagram in a new tab | Pass |
-  |Click on the Facebook icon in the footer | It should open Facebook in a new tab | Pass |
+  |Click on the TikTok icon in the footer | It should open Facebook in a new tab | Pass |
+  |Click on the Youtube icon in the footer | It should open Facebook in a new tab | Pass |
+  |Click on the GitHub icon in the footer | It should open Facebook in a new tab | Pass |
 
   </details>
 
   <details>
-  <summary>Form</summary>
+  <summary>Game</summary>
 
   |Action | Expected behavious | Result|
   |-------|--------------------|-------|
-  |Submit the form without any value | Browser should inform me that "Name" is a required field | Pass |
-  |Submit the form without email address | Browser should inform me that "Email" is a required field | Pass |
-  |Submit the form with invalid email address | Browser should inform me that "Email" field must be of email format | Pass |
-  |Submit the form without choosing a date | Browser should inform me that is a required field | Pass |
-  |Submit the form with all the required information | Form should be submitted and open a booked page page | Pass |
+  |When you press the navigation keys on the keyboard, the snake's body should start to move  | Pass |
+  |When you press the navigation keys on the keyboard, the snake's body will move to the side of the arrow you press | Pass |
+  |When the snake's body goes over the edge of the game area it should return GameOver | Pass |
+  |When GameOver is triggered, a GameOver alert should appear | Pass |
+  |When the snake's body passes the mouse, it must disappear and add 1 point to the body  | Pass |
+  |When the snake's body passes through its own body, it must return GameOver  | Pass |
 
   </details>
-
-  <details>
-  <summary>Booked </summary>
-
-  |Action | Expected behavious | Result|
-  |-------|--------------------|-------|
-  |Click on the email address from the booked page | It should open the email client to send an email | Pass |
-  |Click on the "Bring me home" link in the booked page | User should be redirected to index.html | Pass |  
-  |Click on the adress in the booked page | It shoud open a new tab with the company adress in google maps | Pass |  
-
-  </details>  
 
 ### Validator Testing
 
 - HTML
   - No errors were returned when passing the final version through the official [W3C validator](https://validator.w3.org/nu/#textarea)
+  - ![HTML validator](assets/media/html_validator.png)
 - CSS
   - No errors were found when passing the final version through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator)
+  -  ![CSS validator](assets/media/css_validator.png)
 
 ### Fixed Bugs
 
