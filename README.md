@@ -113,6 +113,12 @@ The homebage containg the information about the company. In particular it contai
 
 ![Game Area](assets/media/game_area_web.png)
 
+- __Game Area on Small Screens__
+
+  - What's different about the es area compared to the web is that for small screens I've added control keys on the screen (in the game div).
+
+![Game Area](assets/media/arrow_game_mobil.png)
+
 - __Score Area__
 - In the score area, you can find the score of the current game on the left and the maximum score achieved in that section on the right.
 
@@ -199,19 +205,15 @@ I have tested the performance in chrome, using lighthouse:
   
 - Home page:
 
-   ![Desktop - home page](assets/media/home-page-desk.png)
+   ![Desktop - home page](assets/media/main_page_web.png)
 
-- Gallery page:
+- Game page:
 
-   ![Desktop - home page](assets/media/gallery-page-desk.png)
+   ![Desktop - game page](assets/media/game_page_web.png)
 
-- Contact page:
+- 404 Error page:
 
-   ![Desktop - home page](assets/media/contact-page-desl.png)
-
-- Booked page:
-
-   ![Desktop - home page](assets/media/booked-page-desk.png)
+   ![Desktop - 404 error page](assets/media/error_404_page_web.png)
 
 </details>
 
@@ -220,19 +222,15 @@ I have tested the performance in chrome, using lighthouse:
   
 - Home page:
 
-   ![Desktop - home page](assets/media/home-page-mob.jpg)
+   ![Desktop - home page](assets/media/home_page_mobil.png)
 
-- Gallery page:
+- Game page:
 
-   ![Desktop - home page](assets/media/gallery-page-mob.jpg)
+   ![Desktop - game page](assets/media/game_area_mobil.png)
 
-- Contact page:
+- 404 Error page:
 
-   ![Desktop - home page](assets/media/contact-page-mob.jpg)
-
-- Booked page:
-
-   ![Desktop - home page](assets/media/booked-page-mob.jpg)
+   ![Desktop - 404 error page](assets/media/404_error_page_mobil.png)
 
 </details>
 
