@@ -45,28 +45,42 @@ Fonts:
 
 Colours:
 
-![colors](assets/media/rgb_colors.jpg)
+![colors](assets/media/color_rgb.png)
 
-- Primary color.   Secondary color.    Gold secondary color:
+--DarkBlue: #111D4A;
+--LightBlue: #0093E9;
+--Black: #171B26;
+--White: #ffffff;
+--Red: #FF003D;
+--Green: #008000;
 
 ## Features
 
-There are two pages: Home page and Game page.
+There are tree pages: Home page, Game page and 404 Error page:
 
 - On the Home page, we can find a large start button, referring to the world of games and interacting with the user to press start. There is also an animated backgroud. On this page we can also find a short message for users to have a better experience with the game and a footer with the author's name and the link to the GitHub page.
-- oOn the Game page, we can find a Header, the game div and a footer with the social media icons and copyrights.
+- On the Game page, we can find a Header, the game div and a footer with the social media icons and copyrights.
+- On the 404 Error page the user can find the big numbers 404 with animation, the mensage "page not finde", one link to come to home page and a footer with the author's name and the link to the GitHub page.
 
 ### Footer
 
 - __Footer__
 
-  - The footer contains:
+  - The footer on  game page contains:
     - copyrights
     - social media links
 
   - When clicking on the social links, this gone open in a new tab.
 
-![Footer](assets/media)
+![Footer Game page](assets/media/footer_web_game.png)
+
+  - The footer on home page and 404 page contains:
+    - copyrights
+    - gitHub icon
+
+  - When clicking on the gitHub link, this gone open in a new tab.
+
+![Footer Home and 404 page](assets/media/footer_home_page_and_404.png)
 
 ### Home Page
 
