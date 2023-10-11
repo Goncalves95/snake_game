@@ -17,8 +17,8 @@ The game is meant to be enjoyed and to bring back good memories for users.
   - [Features](#features)
     - [Footer](#footer)
     - [Home Page](#home-page)
-    - [Gallery Page](#gallery-page)
-    - [Contact Page](#contact-page)
+    - [Game Page](#game-page)
+    - [404 Error Page](#404-error-page)
     - [Booked Page](#booked-page)
   - [Testing](#testing)
     - [Tests](#tests)
@@ -84,16 +84,7 @@ There are tree pages: Home page, Game page and 404 Error page:
 
 ### Home Page
 
-- __Hero-Image__
-
-  - This is the landing page for our users, so it has an eye-catching hero image to grab their attention.
-  - The Hero Image contains the principal message from the page. In the Home page its the message "Privet Chef's in your Home or Event"
-  in the gallery page is "Privet Chef's Gallery History"
-  and in the contact page "Privet Chef's Contact us!" this tops for help the user recognise where he are.
-
-![Hero image](assets/media/header-about-content.png)
-
-- __About__
+- __StartButton__
 
 The homebage containg the information about the company. In particular it contains two distinc sections:
 
@@ -101,23 +92,29 @@ The homebage containg the information about the company. In particular it contai
 
 - The about, where the user can finde and read what the company do and what can expect from them.
 
-- __Our Services__
+- __Information Users__
 
-  - In this section I have placed one cards section describing each service provided by the company.  
-  - There is one section for each service.
-  - It contains one image, a title and a brief description of each service.
+  - A welcome message for the user.
+  - In this section I have placed a small text to inform the user for have the best experience its recomended playing on laptop or computer.  
+  - And a nice message to Good Game.
 
- ![Cards's](assets/media/our-services-cards.png)
+ ![Cards's](assets/media/main_page_web.png)
 
-### Gallery Page
+### Game Page
 
-- __Images__
+- __Header__
 
-  - On this page you will find simplified information about the services we have already provided. Some images of events and private services provided by the company.
+  - This is the landing page for our users, so it has an header for fun.
 
- ![Gallery Page](assets/media/gallery.png)
+![Header](assets/media/heading_web.png)
 
-### Contact Page
+- __Game Area__
+
+  - In this area it´s where the game it´s creat .
+
+![Header](assets/media/heading_web.png)
+
+### 404 Error Page
 
 - This Page contains a form to contact the company and ask one quote.
 - The following fiels are required: Name, Email, Service equired,  Number of people, start and end date of the event.
