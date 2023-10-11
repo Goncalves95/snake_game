@@ -14,6 +14,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'roboto', sans-serif;
+    overflow: auto;
 }
 body {
     display: grid;
@@ -394,6 +395,26 @@ footer>div {
         font-size: 1rem;
     }
     header {
+        font-size: 100%;
+    }
+
+    .error {
+        font-size: 600%;
+    }
+
+    .COPY {
+        padding-bottom: 0;
+    }
+
+    .button-start {
+        width: 250px;
+        height: 180px;
+    }
+
+    h2 {
+        font-size: 160%;
+    }
+    h3 {
         font-size: 100%;
     }
 }
